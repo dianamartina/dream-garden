@@ -1,0 +1,53 @@
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+    position: relative;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba($color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba($color-black, 0.2);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &-color-secondary {
+    color: $color-white;
+    background-color: $color-secondary;
+
+    &::after {
+      background-color: $color-secondary;
+    }
+  }
+
+  &-main-animate {
+    animation: moveInUp 2s ease-out 2s;
+    animation-fill-mode: backwards; // the button will not apear before the animation
+  }
+}
