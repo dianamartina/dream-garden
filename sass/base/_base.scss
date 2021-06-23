@@ -7,9 +7,14 @@
 }
 
 html {
-  font-size: 62.5%; //this defines what 1 rem is
+  box-sizing: border-box;
+  font-size: 62.5%; //this defines what 1 rem is 1rem=10px, 10px/16px=62.5%
+  background-color: $color-primary-dark;
 }
 
 body {
-  box-sizing: border-box;
+  color: $color-grey-dark-1;
+
+  /* height: 100vh;  will help center the app in the middle of the height 
+    overflow: hidden; no scroll bars */
 }

@@ -1,17 +1,23 @@
-.heading-primary {
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.heading-1 {
   color: $color-white;
   text-transform: uppercase;
   font-weight: 400;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
   backface-visibility: hidden; //remove the small shaking from the animation
 
   &--main {
     display: inline-block;
-    font-size: 40px;
-    letter-spacing: 10px;
+    font-size: 4rem;
+    letter-spacing: 1rem;
     animation: moveInLeft 3s ease-in;
   }
 
@@ -20,21 +26,40 @@
   }
 
   &--secondary {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
-    letter-spacing: 14px;
+    letter-spacing: 1.4rem;
     animation: moveInRight 3s ease-in;
   }
 }
 
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: $color-grey-dark-1;
-  background-color: $color-primary-dark;
+.heading-2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  display: inline-block;
+  //linear gradient for header
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
-  /* height: 100vh;  will help center the app in the middle of the height 
-    overflow: hidden; no scroll bars */
-  padding: 30px;
+.heading-4 {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }
