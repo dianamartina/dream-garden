@@ -5,7 +5,6 @@
     display: inline-block;
     width: 30rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
-    border-radius: 2px;
     position: absolute;
     z-index: 10;
     transition: all 0.2s;
@@ -25,7 +24,7 @@
     }
 
     &:hover {
-      outline: 1.5rem solid $color-primary-light;
+      outline: 0.5rem solid $color-grey-light-2;
       transform: scale(1.05);
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
       z-index: 20;

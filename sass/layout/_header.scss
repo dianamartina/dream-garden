@@ -3,7 +3,6 @@
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
 
   &__logo-box {
     position: absolute;
@@ -16,14 +15,20 @@
     height: 3.5rem;
   }
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    height: 100vh;
+  }
+
   &__text-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100%;
     width: 60%;
-    position: absolute;
+    margin-top: 20vh;
+    margin-bottom: 15vh;
     z-index: 10;
   }
 
@@ -42,5 +47,11 @@
     z-index: 2;
     top: 0;
     left: 0;
+  }
+
+  &__features {
+    display: flex;
+    justify-content: center;
+    z-index: 20;
   }
 }
