@@ -1,11 +1,10 @@
 .feature-box {
   width: 24rem;
-  background-color: rgba($color-white, 0.95);
+  background-color: rgba($color-white, 0.93);
   font-size: 1.5rem;
   padding: 2rem;
   text-align: center;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
-  transition: all 0.4s;
 
   &__icon {
     font-size: 5rem;
@@ -19,10 +18,11 @@
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
+    transition: all 0.4s;
   }
 
   &:hover {
-    // transform: skewY(-5deg) scale(1.03);
+    background-color: $color-white;
   }
 
   &:not(:last-child) {

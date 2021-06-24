@@ -40,12 +40,21 @@
     transition: all 0.4s;
   }
 
-  &-color-secondary {
+  &--secondary {
     color: $color-white;
     background-color: $color-secondary;
 
     &::after {
       background-color: $color-secondary;
+    }
+  }
+
+  &--white {
+    color: $color-primary;
+    background-color: $color-white;
+
+    &::after {
+      background-color: $color-white;
     }
   }
 

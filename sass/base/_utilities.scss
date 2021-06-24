@@ -5,6 +5,9 @@
 .u-mb-big {
   margin-bottom: 8rem;
 }
+.u-mb-big-med {
+  margin-bottom: 6rem;
+}
 
 .u-mb-medium {
   margin-bottom: 4rem;
@@ -15,4 +18,12 @@
 
 .u-pt-big {
   padding-top: 8rem;
+}
+.u-pt-big-med {
+  padding-top: 6rem;
+}
+
+.u-text-cut {
+  -webkit-text-decoration-line: line-through; /* Safari */
+  text-decoration-line: line-through;
 }
