@@ -33,13 +33,20 @@
 }
 
 .section-testimonials {
-  height: 50rem;
+  padding: 6rem 1.6rem 15rem;
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.section-gallery-cover {
+  background-color: $color-white;
   padding: 10rem 1.6rem 20rem;
 }
 
 .section-gallery {
-  background-color: $color-white;
-
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, 5vw);
