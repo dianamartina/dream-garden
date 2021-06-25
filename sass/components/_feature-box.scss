@@ -1,6 +1,6 @@
 .feature-box {
   width: 24rem;
-  background-color: rgba($color-white, 0.93);
+  background-color: rgba($color-white, 0.7);
   font-size: 1.5rem;
   padding: 2rem;
   text-align: center;
@@ -18,11 +18,15 @@
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
-    transition: all 0.4s;
+    transition: all 1.5s;
   }
 
   &:hover {
     background-color: $color-white;
+  }
+
+  &:hover &__icon {
+    transform: rotateY(180deg);
   }
 
   &:not(:last-child) {
