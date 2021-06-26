@@ -7,7 +7,6 @@
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
-    border: none;
     cursor: pointer;
   }
 
@@ -52,6 +51,16 @@
   &--white {
     color: $color-primary;
     background-color: $color-white;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--white-outline {
+    color: $color-white;
+    background-color: transparent;
+    border: 1px solid $color-white;
 
     &::after {
       background-color: $color-white;

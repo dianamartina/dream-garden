@@ -49,6 +49,15 @@ body {
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.heading-2-white {
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $color-white;
 }
 
 .heading-3 {
@@ -57,6 +66,16 @@ body {
   font-weight: 700;
   color: $color-grey-light-1;
   display: inline-block;
+
+  &__back {
+    font-size: 10rem;
+    color: $color-grey-light-2;
+    position: absolute;
+    text-transform: uppercase;
+    top: -41px;
+    left: 42px;
+    z-index: 1;
+  }
 }
 
 .heading-4 {
