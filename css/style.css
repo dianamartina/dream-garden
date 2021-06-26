@@ -105,7 +105,7 @@ body {
   display: inline-block; }
   .heading-3__back {
     font-size: 10rem;
-    color: #eee;
+    color: #eeeeee;
     position: absolute;
     text-transform: uppercase;
     top: -41px;
@@ -128,6 +128,13 @@ body {
 
 .u-text-center {
   text-align: center; }
+
+.u-center-box {
+  display: flex;
+  justify-content: center; }
+
+.u-mb-bigger {
+  margin-bottom: 10rem; }
 
 .u-mb-big {
   margin-bottom: 8rem; }
@@ -155,13 +162,14 @@ body {
 .pos-rel {
   position: relative; }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
   transition: all 0.2s;
   position: relative;
   font-size: 1.6rem;
+  border: none;
   cursor: pointer; }
 
 .btn:hover {
@@ -228,6 +236,19 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transform: translateY(0); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.2; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .card {
   perspective: 150rem;
@@ -298,7 +319,7 @@ body {
         font-size: 1.5rem;
         padding: 0.8rem; }
         .card__details ul li:not(:last-child) {
-          border-bottom: 1px dotted #eee; }
+          border-bottom: 1px dotted #eeeeee; }
   .card__scale {
     transform: scale(1.15); }
 
@@ -322,7 +343,7 @@ body {
       left: 5rem;
       top: 10rem; }
     .composition__photo:hover {
-      outline: 0.5rem solid #eee;
+      outline: 0.5rem solid #eeeeee;
       transform: scale(1.05);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
@@ -351,6 +372,45 @@ body {
     transform: rotateY(180deg); }
   .feature-box:not(:last-child) {
     margin-right: 1rem; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 1.5rem; }
+
+.form__group .form__mess {
+  margin-bottom: 3rem; }
+
+.form__input, .form__mess {
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: inherit;
+  background-color: #ffffff;
+  padding: 1.2rem 2rem;
+  border: none;
+  border: 2px solid #eeeeee;
+  width: 100%;
+  display: block;
+  transition: all 0.3s; }
+  .form__input:focus, .form__mess:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border: 2px solid #60d65b; }
+  .form__input:focus:invalid, .form__mess:focus:invalid {
+    border: 2px solid #ff8a00; }
+  .form__input::-webkit-input-placeholder, .form__mess::-webkit-input-placeholder {
+    color: #777; }
+
+.form__label {
+  font-size: 1.3rem;
+  color: #d8d8d8;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.4s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
 .testimonial {
   width: 40%;
@@ -570,4 +630,31 @@ body {
     align-items: center; }
 
 .section-contact {
-  padding: 6rem 1.6rem 15rem; }
+  position: relative;
+  padding: 10rem 1.6rem 15rem; }
+  .section-contact__content {
+    width: 80%;
+    height: 50rem;
+    background-image: linear-gradient(105deg, #023300 0%, #023300 40%, #ffffff 40%);
+    background-size: 100%;
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem; }
+
+.contact__adress {
+  flex: 0 1 28%; }
+  .contact__adress ul {
+    list-style: none;
+    color: #eeeeee; }
+    .contact__adress ul li {
+      margin-bottom: 2rem;
+      font-size: 1.6rem; }
+  .contact__adress--email {
+    cursor: pointer; }
+    .contact__adress--email:hover {
+      color: #60d65b;
+      text-decoration: underline; }
+
+.contact__form {
+  flex: 0 1 50%; }
