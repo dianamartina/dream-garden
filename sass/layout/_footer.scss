@@ -1,0 +1,18 @@
+.footer {
+  background-color: $color-grey-dark-3;
+  padding: 3rem 1.6rem 2rem;
+
+  font-size: 1.4rem;
+  color: $color-grey-light-1;
+  &__content {
+    padding-left: 1.6rem;
+  }
+
+  &__copyright {
+    border-top: 1px solid $color-grey-light-4;
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    opacity: 0.6;
+  }
+}

@@ -412,6 +412,25 @@ body {
   visibility: hidden;
   transform: translateY(-4rem); }
 
+.navigation__list {
+  list-style: none;
+  display: flex; }
+
+.navigation__item:not(:last-child) {
+  margin-right: 2rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  color: #f7f7f7;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all; }
+
+.navigation__link:hover, .navigation__link:active {
+  color: #60d65b;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  transform: rotate(-5deg) scale(1.15); }
+
 .testimonial {
   width: 40%;
   background-color: #ffffff;
@@ -466,6 +485,20 @@ body {
     top: 0;
     left: 0;
     clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%); }
+
+.footer {
+  background-color: #1a1a1a;
+  padding: 3rem 1.6rem 2rem;
+  font-size: 1.4rem;
+  color: #f7f7f7; }
+  .footer__content {
+    padding-left: 1.6rem; }
+  .footer__copyright {
+    border-top: 1px solid #d8d8d8;
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    opacity: 0.6; }
 
 .container {
   max-width: 120rem;
