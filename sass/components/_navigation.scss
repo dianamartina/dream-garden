@@ -12,7 +12,8 @@
 
   &__link {
     &:link,
-    &:visited {
+    &:visited,
+    &--active {
       color: $color-grey-light-1;
       text-decoration: none;
       text-transform: uppercase;
@@ -21,7 +22,8 @@
     }
 
     &:hover,
-    &:active {
+    &:active,
+    &--active {
       color: $color-primary-light;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
       transform: rotate(-5deg) scale(1.15);

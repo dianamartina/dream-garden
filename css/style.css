@@ -419,14 +419,14 @@ body {
 .navigation__item:not(:last-child) {
   margin-right: 2rem; }
 
-.navigation__link:link, .navigation__link:visited {
+.navigation__link:link, .navigation__link:visited, .navigation__link--active {
   color: #f7f7f7;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
   transition: all; }
 
-.navigation__link:hover, .navigation__link:active {
+.navigation__link:hover, .navigation__link:active, .navigation__link--active {
   color: #60d65b;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
   transform: rotate(-5deg) scale(1.15); }
@@ -508,17 +508,22 @@ body {
   grid-template-rows: 100vh; }
 
 .header {
+  padding: 3rem 1.6rem 0rem;
   height: 100vh;
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center; }
+  .header__logo-nav {
+    display: flex;
+    justify-content: space-between; }
   .header__logo-box {
-    position: absolute;
-    top: 3rem;
-    left: 3rem;
     z-index: 10; }
   .header__logo {
     height: 3.5rem; }
+  .header__navigation {
+    font-size: 1.6rem;
+    margin-right: 2rem;
+    z-index: 10; }
   .header__content {
     display: flex;
     flex-direction: column;

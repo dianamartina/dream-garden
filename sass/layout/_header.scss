@@ -1,18 +1,27 @@
 .header {
+  padding: 3rem 1.6rem 0rem;
   height: 100vh;
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
 
+  &__logo-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__logo-box {
-    position: absolute;
-    top: 3rem;
-    left: 3rem;
     z-index: 10;
   }
 
   &__logo {
     height: 3.5rem;
+  }
+
+  &__navigation {
+    font-size: 1.6rem;
+    margin-right: 2rem;
+    z-index: 10;
   }
 
   &__content {
