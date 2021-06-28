@@ -51,6 +51,18 @@ body {
   color: transparent;
   position: relative;
   z-index: 2;
+
+  &::before {
+    content: "";
+    width: 10rem;
+    height: 5rem;
+    background-image: url("../../img/leaves.svg");
+    background-repeat: no-repeat;
+    background-size: 10rem 5rem;
+    position: absolute;
+    top: -2.7rem;
+    left: 0;
+  }
 }
 
 .heading-2-white {

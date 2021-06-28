@@ -90,6 +90,16 @@ body {
   color: transparent;
   position: relative;
   z-index: 2; }
+  .heading-2::before {
+    content: "";
+    width: 10rem;
+    height: 5rem;
+    background-image: url("../../img/leaves.svg");
+    background-repeat: no-repeat;
+    background-size: 10rem 5rem;
+    position: absolute;
+    top: -2.7rem;
+    left: 0; }
 
 .heading-2-white {
   font-size: 3.5rem;
@@ -429,7 +439,8 @@ body {
 .navigation__link:hover, .navigation__link:active, .navigation__link--active {
   color: #60d65b;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-  transform: rotate(-5deg) scale(1.15); }
+  transform: rotate(-5deg) scale(1.15);
+  transform-origin: top right; }
 
 .testimonial {
   width: 40%;
@@ -519,7 +530,12 @@ body {
   .header__logo-box {
     z-index: 10; }
   .header__logo {
-    height: 3.5rem; }
+    display: inline-block;
+    height: 6rem;
+    width: 12rem;
+    background-image: url("../../img/logo.svg");
+    background-repeat: no-repeat;
+    background-size: 12rem 6rem; }
   .header__navigation {
     font-size: 1.6rem;
     margin-right: 2rem;
