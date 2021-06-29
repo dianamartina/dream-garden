@@ -2,14 +2,20 @@
 //1em = 16px (from the browser)
 
 @mixin respond($breakpoint) {
-  //0-600px  Phone
+  //320-480px  Phone
   @if ($breakpoint == phone) {
-    @media only screen and (max-width: 37.5em) {
-      // 600px
+    @media only screen and (max-width: 48em) {
       @content;
     }
   }
-  //600-900px  Tablet portrait
+
+  //481-768px  Big Phone
+  @if ($breakpoint == big-phone) {
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+  //769-900px  Tablet portrait
   @if ($breakpoint == tab-port) {
     @media only screen and (max-width: 56.25em) {
       @content;

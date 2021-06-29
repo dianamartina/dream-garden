@@ -35,3 +35,9 @@ body {
 .main {
   background-color: $color-grey-light-1;
 }
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  background-color: $color-grey-light-1;
+}

@@ -19,6 +19,10 @@ body {
     font-size: 4rem;
     letter-spacing: 1rem;
     animation: moveInLeft 3s ease-in;
+
+    @include respond(big-phone) {
+      font-size: 3rem;
+    }
   }
 
   &--main-sec {
@@ -26,10 +30,15 @@ body {
   }
 
   &--secondary {
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: 1.4rem;
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: 1rem;
     animation: moveInRight 3s ease-in;
+
+    @include respond(big-phone) {
+      font-size: 1.3rem;
+      letter-spacing: 0.9rem;
+    }
   }
 }
 
@@ -51,6 +60,10 @@ body {
   color: transparent;
   position: relative;
   z-index: 2;
+
+  @include respond(big-phone) {
+    font-size: 3rem;
+  }
 
   &::before {
     content: "";
@@ -80,12 +93,12 @@ body {
   display: inline-block;
 
   &__back {
-    font-size: 10rem;
-    color: $color-grey-light-2;
+    font-size: 9rem;
+    color: #eeeeee;
     position: absolute;
     text-transform: uppercase;
-    top: -41px;
-    left: 42px;
+    top: -30px;
+    left: 46px;
     z-index: 1;
   }
 }

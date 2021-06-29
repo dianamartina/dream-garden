@@ -8,26 +8,23 @@
     position: absolute;
     z-index: 10;
     transition: all 0.2s;
-    outline-offset: 1rem;
+    outline-offset: 0.7rem;
 
     &--img1 {
       left: 0;
       top: -2rem;
     }
+
     &--img2 {
-      left: 15rem;
-      top: 2rem;
-    }
-    &--img3 {
       left: 5rem;
       top: 10rem;
     }
 
     &:hover {
-      outline: 0.5rem solid $color-grey-light-2;
-      transform: scale(1.05);
+      transform: scale(1.06);
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
       z-index: 20;
+      outline: 0.5rem solid #eeeeee;
     }
   }
 

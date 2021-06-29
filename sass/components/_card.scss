@@ -19,6 +19,7 @@
     &--front {
       background-color: $color-white;
     }
+
     &--back {
       transform: rotateY(180deg);
       display: flex;
@@ -39,6 +40,12 @@
           $color-primary
         );
       }
+    }
+
+    &--scale {
+      height: 55rem;
+      width: 26rem;
+      top: -2.5rem;
     }
   }
 
@@ -134,9 +141,5 @@
         }
       }
     }
-  }
-
-  &__scale {
-    transform: scale(1.15);
   }
 }
