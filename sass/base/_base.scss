@@ -10,6 +10,19 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; //this defines what 1 rem is 1rem=10px, 10px/16px=62.5%
   background-color: $color-primary-dark;
+
+  //MEDIA QUERY
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem=12px, 12/16 = 75%
+  }
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem=9px, 9/16= 50%
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //1rem = 8px, 8/16 =50%
+  }
 }
 
 body {

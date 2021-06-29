@@ -41,6 +41,15 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   background-color: #011801; }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   color: #444;
@@ -70,7 +79,7 @@ body {
     letter-spacing: 1rem;
     animation: moveInLeft 3s ease-in; }
   .heading-1--main-sec {
-    color: #ff8a00; }
+    color: #9d42a0; }
   .heading-1--secondary {
     font-size: 1.8rem;
     font-weight: 700;
@@ -179,7 +188,6 @@ body {
   transition: all 0.2s;
   position: relative;
   font-size: 1.6rem;
-  border: none;
   cursor: pointer; }
 
 .btn:hover {
@@ -207,9 +215,10 @@ body {
 
 .btn--secondary {
   color: #ffffff;
-  background-color: #ff8a00; }
+  background-color: #9d42a0;
+  border: none; }
   .btn--secondary::after {
-    background-color: #ff8a00; }
+    background-color: #9d42a0; }
 
 .btn--white {
   color: #023300;
@@ -285,7 +294,7 @@ body {
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #60d65b, #023300); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #ff8a00, #023300); }
+        background-image: linear-gradient(to right bottom, #9d42a0, #023300); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -298,7 +307,7 @@ body {
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #60d65b, #011801), url(../../img/img-3.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #ff8a00, #011801), url(../../img/img-4.jpg); }
+      background-image: linear-gradient(to right bottom, #9d42a0, #011801), url(../../img/img-4.jpg); }
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #60d65b, #011801), url(../../img/img-5.jpg); }
   .card__heading {
@@ -317,7 +326,7 @@ body {
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(96, 214, 91, 0.85), rgba(1, 24, 1, 0.85)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(255, 138, 0, 0.85), rgba(1, 24, 1, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(157, 66, 160, 0.85), rgba(1, 24, 1, 0.85)); }
   .card__details {
     text-align: center;
     margin: 0 auto;
@@ -405,7 +414,7 @@ body {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     border: 2px solid #60d65b; }
   .form__input:focus:invalid, .form__mess:focus:invalid {
-    border: 2px solid #ff8a00; }
+    border: 2px solid #9d42a0; }
   .form__input::-webkit-input-placeholder, .form__mess::-webkit-input-placeholder {
     color: #777; }
 
