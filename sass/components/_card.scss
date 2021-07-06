@@ -6,6 +6,17 @@
   width: 25rem;
   position: relative;
 
+  @include respond(big-phone) {
+    height: auto;
+    width: 50rem;
+    margin-bottom: 3rem;
+    background-color: $color-white;
+  }
+
+  @include respond(phone) {
+    width: 28rem;
+  }
+
   &__side {
     background-color: $color-white;
     height: 50rem;
@@ -16,6 +27,16 @@
     left: 0;
     backface-visibility: hidden;
 
+    @include respond(big-phone) {
+      height: auto;
+      width: 50rem;
+      position: relative;
+    }
+
+    @include respond(phone) {
+      width: 28rem;
+    }
+
     &--front {
       background-color: $color-white;
     }
@@ -25,6 +46,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @include respond(big-phone) {
+        transform: rotateY(0);
+        padding: 3rem 0;
+        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+      }
 
       &-1 {
         background-image: linear-gradient(
@@ -46,11 +73,25 @@
       height: 55rem;
       width: 26rem;
       top: -2.5rem;
+
+      @include respond(big-phone) {
+        height: 50rem;
+        width: 50rem;
+        top: 0;
+      }
+
+      @include respond(phone) {
+        width: 28rem;
+      }
     }
   }
 
   &:hover &__side--front {
     transform: rotateY(-180deg);
+
+    @include respond(big-phone) {
+      transform: rotateY(0);
+    }
   }
 
   &:hover &__side--back {
@@ -63,6 +104,10 @@
     height: 16rem;
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+    @include respond(big-phone) {
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
 
     &--1 {
       background-image: linear-gradient(

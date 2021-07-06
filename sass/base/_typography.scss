@@ -100,6 +100,10 @@ body {
     top: -30px;
     left: 46px;
     z-index: 1;
+    @include respond(big-phone) {
+      font-size: 7rem;
+      top: -23px;
+    }
   }
 }
 
@@ -120,4 +124,8 @@ body {
 .heading-5 {
   font-size: 3rem;
   color: $color-primary-dark;
+
+  @include respond(big-phone) {
+    font-size: 2rem;
+  }
 }

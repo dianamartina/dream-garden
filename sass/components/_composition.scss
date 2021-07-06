@@ -1,23 +1,45 @@
 .composition {
   position: relative;
+  width: 35%;
+  margin: 0 2rem;
+
+  @include respond(big-phone) {
+    position: relative;
+    width: 100%;
+    margin: 10rem 2rem;
+    display: flex;
+    justify-content: center;
+  }
 
   &__photo {
     display: inline-block;
-    width: 30rem;
+    width: 85%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     position: absolute;
     z-index: 10;
     transition: all 0.2s;
     outline-offset: 0.7rem;
 
+    @include respond(big-phone) {
+      width: 70%;
+    }
+
     &--img1 {
       left: 0;
       top: -2rem;
+
+      @include respond(big-phone) {
+        position: relative;
+      }
     }
 
     &--img2 {
-      left: 5rem;
-      top: 10rem;
+      left: 6rem;
+      top: 6rem;
+      @include respond(big-phone) {
+        left: 4rem;
+        top: 12rem;
+      }
     }
 
     &:hover {
