@@ -6,6 +6,11 @@
   text-align: center;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
 
+  @include respond(big-phone) {
+    margin-bottom: 3rem;
+    width: 70%;
+  }
+
   &__icon {
     font-size: 5rem;
     background-image: linear-gradient(
@@ -31,5 +36,9 @@
 
   &:not(:last-child) {
     margin-right: 1rem;
+
+    @include respond(big-phone) {
+      margin-right: 0;
+    }
   }
 }

@@ -6,10 +6,21 @@
   bottom: -13rem;
   left: 0;
   width: 100%;
+
+  @include respond(big-phone) {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: -7rem;
+  }
 }
 
 .section-about {
   padding: 22rem 1.6rem 14rem;
+
+  @include respond(big-phone) {
+    padding-top: 14rem;
+  }
 }
 
 .section-about__content {
@@ -36,6 +47,11 @@
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   margin-top: -10%;
 
+  @include respond(big-phone) {
+    clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+    padding: 18rem 1.6rem;
+  }
+
   &__description {
     color: $color-white;
     padding: 1.6rem;
@@ -56,6 +72,10 @@
 .section-testimonials {
   padding: 12rem 1.6rem 15rem;
 
+  @include respond(big-phone) {
+    padding: 9rem 1.6rem 10rem;
+  }
+
   &__content {
     display: flex;
     justify-content: space-around;
@@ -70,6 +90,10 @@
 .section-gallery-cover {
   background-color: $color-white;
   padding: 12rem 1.6rem 0;
+
+  @include respond(big-phone) {
+    padding-top: 10rem;
+  }
 }
 
 .section-gallery {
@@ -152,11 +176,6 @@
       grid-row: 3 / span 1;
       grid-column: 4 / span 1;
     }
-
-    // &:hover {
-    //   transform: scale(1.3);
-    //   border: 5px solid $color-white;
-    // }
   }
 
   &__img {
@@ -182,17 +201,29 @@
   background-size: cover;
   background-attachment: fixed;
 
+  @include respond(big-phone) {
+    height: 20rem;
+  }
+
   &__content {
     height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 }
 
 .section-contact {
   position: relative;
   padding: 12rem 1.6rem 15rem;
+
+  @include respond(big-phone) {
+    padding: 10rem 1.6rem 9rem;
+  }
 
   &__content {
     width: 80%;

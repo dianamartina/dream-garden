@@ -27,6 +27,11 @@
     font-size: 1.6rem;
     margin-right: 2rem;
     z-index: 10;
+
+    // //////only for test/////////
+    // @include respond(big-phone) {
+    //   display: none;
+    // }
   }
 
   &__content {
@@ -42,6 +47,10 @@
     flex-direction: column;
     align-items: center;
     z-index: 10;
+
+    @include respond(big-phone) {
+      width: 100%;
+    }
   }
   &::after {
     content: "";
@@ -58,5 +67,13 @@
     z-index: 2;
     top: 0;
     left: 0;
+
+    @include respond(tab-port) {
+      clip-path: polygon(0 0, 80% 0, 60% 100%, 0 100%);
+    }
+
+    @include respond(big-phone) {
+      clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+    }
   }
 }

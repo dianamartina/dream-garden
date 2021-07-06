@@ -13,6 +13,10 @@
 
 .u-mb-big {
   margin-bottom: 8rem;
+
+  @include respond(big-phone) {
+    margin-bottom: 6rem;
+  }
 }
 .u-mb-big-med {
   margin-bottom: 6rem;
@@ -20,6 +24,10 @@
 
 .u-mb-medium {
   margin-bottom: 4rem;
+
+  @include respond(big-phone) {
+    margin-bottom: 2.5rem;
+  }
 }
 .u-mb-small {
   margin-bottom: 2rem;

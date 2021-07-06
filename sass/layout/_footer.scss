@@ -1,11 +1,22 @@
 .footer {
   background-color: $color-grey-dark-3;
   padding: 7rem 1.6rem 2rem;
-
   font-size: 1.4rem;
   color: $color-grey-light-1;
+
+  @include respond(phone) {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__content {
     padding-left: 1.6rem;
+
+    @include respond(phone) {
+      & .navigation .navigation__list {
+        flex-direction: column;
+      }
+    }
   }
 
   &__copyright {
