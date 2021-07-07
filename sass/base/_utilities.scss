@@ -9,6 +9,10 @@
 
 .u-mb-bigger {
   margin-bottom: 10rem;
+
+  @include respond(big-phone) {
+    margin-bottom: 7rem;
+  }
 }
 
 .u-mb-big {

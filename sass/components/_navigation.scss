@@ -1,4 +1,9 @@
 .navigation {
+  &__checkbox {
+    display: none;
+    position: absolute;
+  }
+
   &__list {
     list-style: none;
     display: flex;
@@ -28,6 +33,147 @@
       box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
       transform: rotate(-5deg) scale(1.15);
       transform-origin: top right;
+    }
+  }
+}
+
+//Navigation for mobile
+
+@include respond(big-phone) {
+  .header__navigation {
+    & .navigation {
+      //Menu functionality
+
+      // background visible on hamburger click
+      &__checkbox:checked ~ .navigation__background {
+        transform: scale(80);
+      }
+
+      // menu visible on hamburger click
+      &__checkbox:checked ~ .navigation__nav {
+        opacity: 1;
+        width: 100%;
+      }
+
+      &__button {
+        background-color: $color-white;
+        height: 7rem;
+        width: 7rem;
+        position: fixed;
+        top: 4rem;
+        right: 4rem;
+        border-radius: 50%;
+        z-index: 90;
+        box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+        text-align: center; /* center the hamburger */
+        cursor: pointer;
+      }
+
+      //the background scales up from a ball that is under the menu hamburger to entire page
+      &__background {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 4.5rem;
+        right: 4.5rem;
+        background-image: radial-gradient(
+          $color-primary,
+          $color-primary-medium
+        );
+
+        box-shadow: 0 0 8px 8px rgba($color-primary-light, 0.01);
+        z-index: 70;
+
+        // transform: scale(80);// only for test
+        transition: transform 0.8s cubic-bezier(0.86, 0, 0.071, 1);
+      }
+
+      &__nav {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 80;
+        opacity: 0;
+        width: 0; // opacity is not enough
+        transition: all 0.8s cubic-bezier(0.68, -0.56, 0.266, 1.55);
+      }
+
+      &__list {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+      }
+
+      &__item {
+        margin: 1rem;
+      }
+
+      &__link {
+        &:link,
+        &:visited {
+          font-size: 3rem;
+          font-weight: 300;
+          padding: 1rem 2rem;
+          color: $color-white;
+        }
+
+        &:hover,
+        &:active {
+          color: $color-white;
+          box-shadow: none;
+          transform: rotate(0) scale(1);
+        }
+      }
+
+      //   ICON
+      &__icon {
+        position: relative;
+        top: 3.5rem;
+
+        &,
+        &::before,
+        &::after {
+          width: 3rem;
+          height: 2px;
+          background-color: $color-grey-dark-3;
+          display: inline-block;
+        }
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          transition: all 0.2s;
+        }
+
+        &::before {
+          top: -0.8rem;
+        }
+
+        &::after {
+          top: 0.8rem;
+        }
+      }
+
+      &__checkbox:checked + .navigation__button .navigation__icon {
+        background-color: transparent;
+      }
+
+      &__checkbox:checked + .navigation__button .navigation__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+      }
+
+      &__checkbox:checked + .navigation__button .navigation__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+      }
     }
   }
 }
