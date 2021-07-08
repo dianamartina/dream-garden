@@ -754,7 +754,7 @@ body {
     display: inline-block;
     height: 6rem;
     width: 12rem;
-    background-image: url("../../img/logo.svg");
+    background-image: url("../img/logo.svg");
     background-repeat: no-repeat;
     background-size: 12rem 6rem; }
   .header__navigation {

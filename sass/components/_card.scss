@@ -115,7 +115,7 @@
           $color-primary-light,
           $color-primary-dark
         ),
-        url(../../img/img-7-small.jpg);
+        url(../img/img-7-small.jpg);
       @include background-image-center;
     }
 
@@ -125,7 +125,7 @@
           $color-secondary,
           $color-primary-dark
         ),
-        url(../../img/img-4-small.jpg);
+        url(../img/img-4-small.jpg);
       @include background-image-center;
     }
 
@@ -135,7 +135,7 @@
           $color-primary-light,
           $color-primary-dark
         ),
-        url(../../img/img-2-small.jpg);
+        url(../img/img-2-small.jpg);
 
       @include background-image-center;
     }
