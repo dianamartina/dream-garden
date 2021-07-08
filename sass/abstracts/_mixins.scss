@@ -34,3 +34,9 @@
     }
   }
 }
+
+@mixin background-image-center {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

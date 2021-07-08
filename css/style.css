@@ -378,11 +378,20 @@ body {
       .card__picture {
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); } }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #80b918, #03241b), url(../../img/img-3.jpg); }
+      background-image: linear-gradient(to right bottom, #80b918, #03241b), url(../../img/img-7-small.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #80b918, #03241b), url(../../img/img-4.jpg); }
+      background-image: linear-gradient(to right bottom, #80b918, #03241b), url(../../img/img-4-small.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #80b918, #03241b), url(../../img/img-5.jpg); }
+      background-image: linear-gradient(to right bottom, #80b918, #03241b), url(../../img/img-2-small.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
   .card__heading {
     margin: 0;
     font-size: 2.8rem;
@@ -728,9 +737,12 @@ body {
 .header {
   padding: 0 1.6rem;
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.01)), url("../img/hero.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.01)), url("../img/hero-small.jpg");
   background-size: cover;
   background-position: center; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em) {
+    .header {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.01)), url("../img/hero.jpg"); } }
   .header__logo-nav {
     display: flex;
     justify-content: space-between;
@@ -942,11 +954,14 @@ body {
   width: 100%;
   height: 30rem;
   background-color: #03241b;
-  background-image: linear-gradient(rgba(3, 36, 27, 0.5), rgba(3, 36, 27, 0.8)), url("../../img/img-leaves.jpg");
+  background-image: linear-gradient(rgba(3, 36, 27, 0.5), rgba(3, 36, 27, 0.8)), url("../../img/img-leaves-small.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em) {
+    .section-go-contact {
+      background-image: linear-gradient(rgba(3, 36, 27, 0.5), rgba(3, 36, 27, 0.8)), url("../../img/img-leaves.jpg"); } }
   @media only screen and (max-width: 48em) {
     .section-go-contact {
       height: 20rem; } }

@@ -115,23 +115,29 @@
           $color-primary-light,
           $color-primary-dark
         ),
-        url(../../img/img-3.jpg);
+        url(../../img/img-7-small.jpg);
+      @include background-image-center;
     }
+
     &--2 {
       background-image: linear-gradient(
           to right bottom,
           $color-secondary,
           $color-primary-dark
         ),
-        url(../../img/img-4.jpg);
+        url(../../img/img-4-small.jpg);
+      @include background-image-center;
     }
+
     &--3 {
       background-image: linear-gradient(
           to right bottom,
           $color-primary-light,
           $color-primary-dark
         ),
-        url(../../img/img-5.jpg);
+        url(../../img/img-2-small.jpg);
+
+      @include background-image-center;
     }
   }
 

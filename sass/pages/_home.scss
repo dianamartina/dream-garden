@@ -219,11 +219,19 @@
       rgba($color-primary-dark, 0.5),
       rgba($color-primary-dark, 0.8)
     ),
-    url("../../img/img-leaves.jpg");
+    url("../../img/img-leaves-small.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em) {
+    background-image: linear-gradient(
+        rgba($color-primary-dark, 0.5),
+        rgba($color-primary-dark, 0.8)
+      ),
+      url("../../img/img-leaves.jpg");
+  }
 
   @include respond(big-phone) {
     height: 20rem;

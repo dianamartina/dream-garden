@@ -6,9 +6,18 @@
       rgba($color-black, 0.75),
       rgba($color-white, 0.01)
     ),
-    url("../img/hero.jpg");
+    url("../img/hero-small.jpg");
   background-size: cover;
   background-position: center;
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-black, 0.75),
+        rgba($color-white, 0.01)
+      ),
+      url("../img/hero.jpg");
+  }
 
   &__logo-nav {
     display: flex;
