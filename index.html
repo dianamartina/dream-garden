@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" /> -->
@@ -13,7 +15,7 @@
 </head>
 
 <body class="container">
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__logo-nav">
             <div class="header__logo-box">
                 <span class="header__logo"> </span>
@@ -37,7 +39,7 @@
                                 <a href="#pricing" class="navigation__link">Our offer</a>
                             </li>
                             <li class="navigation__item">
-                                <a href="#testimonials" class="navigation__link">Our clients</a>
+                                <a href="#testimonials" class="navigation__link">Clients</a>
                             </li>
                             <li class="navigation__item">
                                 <a href="#gallery" class="navigation__link">Gallery</a>
@@ -58,7 +60,7 @@
                     <span class="heading-1--main">Dream <span class="heading-primary--main-sec">Garden</span></span>
                     <span class="heading-1--secondary">Create your own garden</span>
                 </h1>
-                <a href="#" class="btn btn--secondary btn-main-animate">Discover our offer</a>
+                <a href="#pricing" class="btn btn--secondary btn-main-animate">Discover our offer</a>
             </div>
         </div>
         <div></div>
@@ -109,8 +111,8 @@
                     <a href="#" class="btn-text">Find more &rarr;</a>
                 </div>
                 <div class="composition">
-                    <img src="img/img-1.jpg" alt="garden-1" class="composition__photo  composition__photo--img1 ">
-                    <img src="img/img-2.jpg" alt="garden-2" class="composition__photo  composition__photo--img2">
+                    <img src="img/img-9.jpg" alt="garden-1" class="composition__photo  composition__photo--img1 ">
+                    <img src="img/img-10.jpg" alt="garden-2" class="composition__photo  composition__photo--img2">
                 </div>
             </div>
         </section>
@@ -225,11 +227,10 @@
                 <div class="testimonial">
                     <div class="testimonial__text">
                         <figure class="testimonial__info">
-                            <img src="https://images.unsplash.com/photo-1589203832113-de9d078abc30?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-                                alt="Mike Store" class="testimonial__info--photo">
+                            <img src="img/client-1.jpg" alt="Mike Store" class="testimonial__info--photo">
                             <div>
-                                <p class="testimonial__info--name"> Mary Smooth</p>
-                                <p class="testimonial__info--date"> Sept 17th, 2019</p>
+                                <p class="testimonial__info--name"> Mike Store</p>
+                                <p class="testimonial__info--date"> Aug 22th, 2020</p>
                             </div>
                         </figure>
 
@@ -242,8 +243,7 @@
                 <div class="testimonial">
                     <div class="testimonial__text">
                         <figure class="testimonial__info">
-                            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
-                                alt="Mike Store" class="testimonial__info--photo">
+                            <img src="img/client-2.jpg" alt="Mary Smooth" class="testimonial__info--photo">
                             <div>
                                 <p class="testimonial__info--name"> Mary Smooth</p>
                                 <p class="testimonial__info--date"> Sept 17th, 2019</p>
@@ -263,13 +263,13 @@
 
         <section class="section-go-contact">
             <div class="section-go-contact__content">
-                <p class="heading-2-white ">Need help for gardening? </p>
+                <h3 class="heading-2-white ">Need help for gardening? </h3>
                 <a href="#contact" class="btn btn--white-outline ">Contact us</a>
             </div>
 
         </section>
 
-        <section class="section-gallery-cover" id="galerry">
+        <section class="section-gallery-cover" id="gallery">
             <div class=" u-mb-big pos-rel">
                 <h2 class="heading-2">Our gallery</h2>
                 <h3 class="heading-3__back">Gallery</h3>
@@ -328,7 +328,7 @@
 
         </section>
 
-        <section class="section-contact" id="contact" id="contact">
+        <section class="section-contact" id="contact">
             <div class="u-mb-bigger pos-rel">
                 <h2 class="heading-2">Contact us</h2>
                 <h3 class="heading-3__back">Contact</h3>
@@ -348,7 +348,7 @@
                     </div>
 
                     <div class="contact__form">
-                        <form action="" class="form">
+                        <form action="#" class="form">
                             <div class="form__group">
                                 <input type="text" class="form__input" placeholder="Full Name" id="name" required>
                                 <label for="name" class="form__label">Full Name</label>
@@ -370,6 +370,7 @@
                         </form>
                     </div>
                 </div>
+            </div>
         </section>
     </main>
 
@@ -381,7 +382,7 @@
             <div class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a href="#about" class="navigation__link">Home</a>
+                        <a href="#header" class="navigation__link">Home</a>
                     </li>
                     <li class="navigation__item">
                         <a href="#about" class="navigation__link">About us</a>
@@ -401,7 +402,7 @@
                 </ul>
             </div>
 
-            <div class="footer__copyright">Copyright &copy;2020 All Rights Reserved. Made with &hearts; by dmS</div>
+            <div class="footer__copyright">Made with &hearts; by dmS</div>
         </div>
 
     </footer>

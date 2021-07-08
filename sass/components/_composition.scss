@@ -41,6 +41,11 @@
         left: 4rem;
         top: 12rem;
       }
+
+      @include respond(phone) {
+        left: 2rem;
+        top: 8rem;
+      }
     }
 
     &:hover {
