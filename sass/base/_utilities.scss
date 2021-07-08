@@ -52,3 +52,16 @@
 .pos-rel {
   position: relative;
 }
+
+.leaves::before {
+  content: "";
+  width: 25rem;
+  height: 13rem;
+  background-image: url(../../img/leaves.svg);
+  background-repeat: no-repeat;
+  background-size: 25rem 13rem;
+  position: absolute;
+  opacity: 0.3;
+  top: 9.3rem;
+  left: -15px;
+}

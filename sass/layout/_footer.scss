@@ -1,16 +1,28 @@
 .footer {
-  background-color: $color-grey-dark-3;
+  background-color: $color-primary-dark;
   padding: 7rem 1.6rem 2rem;
   font-size: 1.4rem;
   color: $color-grey-light-1;
 
+  & .leaves {
+    display: none;
+  }
+
   @include respond(phone) {
     display: flex;
     justify-content: space-between;
+
+    & .leaves {
+      display: inline-block;
+    }
   }
 
   &__content {
     padding-left: 1.6rem;
+
+    @include respond(phone) {
+      padding-right: 3rem;
+    }
 
     @include respond(phone) {
       & .navigation .navigation__list {

@@ -118,7 +118,7 @@ body {
     content: "";
     width: 10rem;
     height: 5rem;
-    background-image: url("../../img/leaves.svg");
+    background-image: url("../../img/leaf.svg");
     background-repeat: no-repeat;
     background-size: 10rem 5rem;
     position: absolute;
@@ -215,6 +215,18 @@ body {
 .pos-rel {
   position: relative; }
 
+.leaves::before {
+  content: "";
+  width: 25rem;
+  height: 13rem;
+  background-image: url(../../img/leaves.svg);
+  background-repeat: no-repeat;
+  background-size: 25rem 13rem;
+  position: absolute;
+  opacity: 0.3;
+  top: 9.3rem;
+  left: -15px; }
+
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -273,15 +285,15 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #60d65b;
+  color: #338830;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #60d65b;
-  padding: 3px;
+  border-bottom: 1px solid #338830;
+  padding: 1rem;
   transition: all 0.2s; }
 
 .btn-text:hover {
-  background-color: #023300;
+  background-color: #338830;
   color: #ffffff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transform: translateY(-2px); }
@@ -289,19 +301,6 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transform: translateY(0); }
-
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: 0.2; }
-  .bg-video__content {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; }
 
 .card {
   perspective: 150rem;
@@ -699,16 +698,23 @@ body {
     clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%); }
 
 .footer {
-  background-color: #1a1a1a;
+  background-color: #011801;
   padding: 7rem 1.6rem 2rem;
   font-size: 1.4rem;
   color: #f7f7f7; }
+  .footer .leaves {
+    display: none; }
   @media only screen and (max-width: 30em) {
     .footer {
       display: flex;
-      justify-content: space-between; } }
+      justify-content: space-between; }
+      .footer .leaves {
+        display: inline-block; } }
   .footer__content {
     padding-left: 1.6rem; }
+    @media only screen and (max-width: 30em) {
+      .footer__content {
+        padding-right: 3rem; } }
     @media only screen and (max-width: 30em) {
       .footer__content .navigation .navigation__list {
         flex-direction: column; } }
@@ -962,7 +968,7 @@ body {
   .section-contact__content {
     width: 80%;
     height: 50rem;
-    background-image: linear-gradient(100deg, #338830 0%, #023300 40%, rgba(255, 255, 255, 0.1) 40%), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='200' height='100'%3E%3Cpath fill='%23bfbfbf' fill-opacity='0.1' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+    background-image: linear-gradient(100deg, #338830 0%, rgba(2, 51, 0, 0.8) 40%, rgba(255, 255, 255, 0.1) 40%), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='200' height='100'%3E%3Cpath fill='%23bfbfbf' fill-opacity='0.1' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
     background-size: 100%;
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
     display: flex;
