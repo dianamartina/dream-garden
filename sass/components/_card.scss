@@ -56,15 +56,15 @@
       &-1 {
         background-image: linear-gradient(
           to right bottom,
-          $color-primary-medium,
-          $color-primary
+          $color-primary,
+          $color-primary-dark
         );
       }
       &-2 {
         background-image: linear-gradient(
           to right bottom,
           $color-secondary,
-          $color-primary
+          $color-primary-dark
         );
       }
     }
