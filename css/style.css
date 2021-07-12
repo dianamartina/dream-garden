@@ -219,7 +219,7 @@ body {
   content: "";
   width: 25rem;
   height: 13rem;
-  background-image: url(../../img/leaves.svg);
+  background-image: url(../img/leaves.svg);
   background-repeat: no-repeat;
   background-size: 25rem 13rem;
   position: absolute;
@@ -378,17 +378,17 @@ body {
       .card__picture {
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); } }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #80b918, #03241b), url(../../img/img-7-small.jpg);
+      background-image: linear-gradient(to right bottom, #80b918, #03241b), url(../img/img-7-small.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat; }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #80b918, #03241b), url(../../img/img-4-small.jpg);
+      background-image: linear-gradient(to right bottom, #80b918, #03241b), url(../img/img-4-small.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat; }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #80b918, #03241b), url(../../img/img-2-small.jpg);
+      background-image: linear-gradient(to right bottom, #80b918, #03241b), url(../img/img-2-small.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat; }
@@ -571,11 +571,11 @@ body {
     width: 100%; }
   .header__navigation .navigation__button {
     background-color: #ffffff;
-    height: 7rem;
-    width: 7rem;
+    height: 6rem;
+    width: 6rem;
     position: fixed;
-    top: 4rem;
-    right: 4rem;
+    top: 3.5rem;
+    right: 3.5rem;
     border-radius: 50%;
     z-index: 90;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
@@ -583,12 +583,12 @@ body {
     /* center the hamburger */
     cursor: pointer; }
   .header__navigation .navigation__background {
-    height: 6rem;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     position: fixed;
-    top: 4.5rem;
-    right: 4.5rem;
+    top: 4rem;
+    right: 4rem;
     background-image: radial-gradient(#2b9368, #30a661);
     box-shadow: 0 0 8px 8px rgba(128, 185, 24, 0.01);
     z-index: 70;
@@ -622,9 +622,9 @@ body {
     transform: rotate(0) scale(1); }
   .header__navigation .navigation__icon {
     position: relative;
-    top: 3.5rem; }
+    top: 3rem; }
     .header__navigation .navigation__icon, .header__navigation .navigation__icon::before, .header__navigation .navigation__icon::after {
-      width: 3rem;
+      width: 2.8rem;
       height: 2px;
       background-color: #1a1a1a;
       display: inline-block; }

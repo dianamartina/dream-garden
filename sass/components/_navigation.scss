@@ -57,11 +57,11 @@
 
       &__button {
         background-color: $color-white;
-        height: 7rem;
-        width: 7rem;
+        height: 6rem;
+        width: 6rem;
         position: fixed;
-        top: 4rem;
-        right: 4rem;
+        top: 3.5rem;
+        right: 3.5rem;
         border-radius: 50%;
         z-index: 90;
         box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
@@ -71,12 +71,12 @@
 
       //the background scales up from a ball that is under the menu hamburger to entire page
       &__background {
-        height: 6rem;
-        width: 6rem;
+        height: 5rem;
+        width: 5rem;
         border-radius: 50%;
         position: fixed;
-        top: 4.5rem;
-        right: 4.5rem;
+        top: 4rem;
+        right: 4rem;
         background-image: radial-gradient(
           $color-primary,
           $color-primary-medium
@@ -133,12 +133,12 @@
       //   ICON
       &__icon {
         position: relative;
-        top: 3.5rem;
+        top: 3rem;
 
         &,
         &::before,
         &::after {
-          width: 3rem;
+          width: 2.8rem;
           height: 2px;
           background-color: $color-grey-dark-3;
           display: inline-block;
