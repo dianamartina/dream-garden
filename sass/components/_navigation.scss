@@ -23,16 +23,15 @@
       text-decoration: none;
       text-transform: uppercase;
       display: inline-block;
-      transition: all;
+      transition: all 0.3s;
     }
 
     &:hover,
     &:active,
     &--active {
       color: $color-primary-light;
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
-      transform: rotate(-5deg) scale(1.15);
-      transform-origin: top right;
+      transform: scale(1.15);
+      transform-origin: center center;
     }
   }
 }
@@ -91,7 +90,7 @@
 
       &__nav {
         height: 100%;
-        width: 100%;
+        // width: 100%;
         position: fixed;
         top: 0;
         left: 0;

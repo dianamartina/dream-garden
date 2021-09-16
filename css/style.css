@@ -440,8 +440,8 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     position: absolute;
     z-index: 10;
-    transition: all 0.2s;
-    outline-offset: 0.7rem; }
+    transition: all 0.5s;
+    outline-offset: 1rem; }
     @media only screen and (max-width: 48em) {
       .composition__photo {
         width: 70%; } }
@@ -466,9 +466,7 @@ body {
       transform: scale(1.06);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20;
-      outline: 0.5rem solid #eeeeee; }
-  .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.95); }
+      outline: 1rem solid #eeeeee; }
 
 .feature-box {
   width: 24rem;
@@ -555,13 +553,12 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  transition: all; }
+  transition: all 0.3s; }
 
 .navigation__link:hover, .navigation__link:active, .navigation__link--active {
   color: #80b918;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-  transform: rotate(-5deg) scale(1.15);
-  transform-origin: top right; }
+  transform: scale(1.15);
+  transform-origin: center center; }
 
 @media only screen and (max-width: 48em) {
   .header__navigation .navigation__checkbox:checked ~ .navigation__background {
@@ -595,7 +592,6 @@ body {
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.071, 1); }
   .header__navigation .navigation__nav {
     height: 100%;
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -733,6 +729,13 @@ body {
     margin-top: 4rem;
     padding-top: 2rem;
     opacity: 0.6; }
+
+.logo-DM {
+  height: 1.8rem;
+  width: auto;
+  display: inline-block;
+  vertical-align: text-bottom;
+  padding-left: 0.4rem; }
 
 .header {
   padding: 0 1.6rem;

@@ -18,8 +18,8 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     position: absolute;
     z-index: 10;
-    transition: all 0.2s;
-    outline-offset: 0.7rem;
+    transition: all 0.5s;
+    outline-offset: 1rem;
 
     @include respond(big-phone) {
       width: 70%;
@@ -52,11 +52,7 @@
       transform: scale(1.06);
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
       z-index: 20;
-      outline: 0.5rem solid #eeeeee;
+      outline: 1rem solid #eeeeee;
     }
-  }
-
-  &:hover &__photo:not(:hover) {
-    transform: scale(0.95);
   }
 }
