@@ -118,7 +118,7 @@ body {
     content: "";
     width: 10rem;
     height: 5rem;
-    background-image: url("../../img/leaf.svg");
+    background-image: url("../img/leaf.svg");
     background-repeat: no-repeat;
     background-size: 10rem 5rem;
     position: absolute;
@@ -370,6 +370,8 @@ body {
         transform: rotateY(0); } }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+  .card:hover .card__heading {
+    display: none; }
   .card__picture {
     background-size: cover;
     height: 16rem;
@@ -967,14 +969,14 @@ body {
   width: 100%;
   height: 30rem;
   background-color: #03241b;
-  background-image: linear-gradient(rgba(3, 36, 27, 0.5), rgba(3, 36, 27, 0.8)), url("../../img/img-leaves-small.jpg");
+  background-image: linear-gradient(rgba(3, 36, 27, 0.5), rgba(3, 36, 27, 0.8)), url("../img/img-leaves-small.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em) {
     .section-go-contact {
-      background-image: linear-gradient(rgba(3, 36, 27, 0.5), rgba(3, 36, 27, 0.8)), url("../../img/img-leaves.jpg"); } }
+      background-image: linear-gradient(rgba(3, 36, 27, 0.5), rgba(3, 36, 27, 0.8)), url("../img/img-leaves.jpg"); } }
   @media only screen and (max-width: 48em) {
     .section-go-contact {
       height: 20rem; } }

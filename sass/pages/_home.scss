@@ -219,7 +219,7 @@
       rgba($color-primary-dark, 0.5),
       rgba($color-primary-dark, 0.8)
     ),
-    url("../../img/img-leaves-small.jpg");
+    url("../img/img-leaves-small.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -230,7 +230,7 @@
         rgba($color-primary-dark, 0.5),
         rgba($color-primary-dark, 0.8)
       ),
-      url("../../img/img-leaves.jpg");
+      url("../img/img-leaves.jpg");
   }
 
   @include respond(big-phone) {
