@@ -23,7 +23,7 @@
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
-      border: 2px solid $color-primary-light;
+      border: 2px solid $color-secondary;
     }
 
     &:focus:invalid {

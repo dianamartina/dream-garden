@@ -29,7 +29,7 @@
     &--name {
       font-size: $default-font-size;
       font-weight: 700;
-      color: $color-primary-light;
+      color: $color-secondary;
     }
 
     &--date {
@@ -69,7 +69,7 @@
     content: "";
     width: 3rem;
     height: 5rem;
-    background-color: $color-primary-light;
+    background-color: $color-secondary;
     position: absolute;
     top: 0;
     left: 0;

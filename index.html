@@ -4,10 +4,22 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Gardening | Landscaping">
+
+    //Favicon
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2a9267">
+    <meta name="msapplication-TileColor" content="#5c8118">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="css/icon-fonts.css">
     <link rel="stylesheet" href="css/style.css" />
+
+    <script defer src="script.js"></script>
+
     <title>Dream Garden</title>
 </head>
 
@@ -46,7 +58,6 @@
                             </li>
                         </ul>
                     </nav>
-
                 </div>
             </div>
         </div>
@@ -65,19 +76,19 @@
     <section class="section-features">
         <div class="feature-box">
             <i class="feature-box__icon icon-basic-picture"></i>
-            <h4 class="heading-4 u-mb-medium">Gardening</h4>
+            <h2 class="heading-4 u-mb-medium">Gardening</h2>
             <p class="feature-box__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore .</p>
         </div>
         <div class="feature-box">
             <i class="feature-box__icon icon-basic-map"></i>
-            <h4 class="heading-4 u-mb-medium">Landscaping</h4>
+            <h2 class="heading-4 u-mb-medium">Landscaping</h2>
             <p class="feature-box__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore .</p>
         </div>
         <div class="feature-box">
             <i class="feature-box__icon icon-basic-mixer2"></i>
-            <h4 class="heading-4 u-mb-medium">Urban garden</h4>
+            <h2 class="heading-4 u-mb-medium">Urban garden</h2>
             <p class="feature-box__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore .</p>
         </div>
@@ -87,7 +98,7 @@
         <section class="section-about" id="about">
             <div class=" u-mb-big pos-rel">
                 <h2 class="heading-2">About us</h2>
-                <h3 class="heading-3__back">About</h3>
+                <p class="heading-3__back">About</p>
             </div>
             <div class="section-about__content">
                 <div class="section-about__content-descrip">
@@ -108,8 +119,10 @@
                     <a href="#" class="btn-text">Find more &rarr;</a>
                 </div>
                 <div class="composition">
-                    <img src="img/img-9.jpg" alt="garden-1" class="composition__photo  composition__photo--img1 ">
-                    <img src="img/img-10.jpg" alt="garden-2" class="composition__photo  composition__photo--img2">
+                    <img srcset="img/img-9.webp" src="img/img-9.jpg" alt="garden-1"
+                        class="composition__photo  composition__photo--img1 " width="954" height="636">
+                    <img srcset="img/img-10.webp" src="img/img-10.jpg" alt="garden-2"
+                        class="composition__photo  composition__photo--img2" width="560" height="373">
                 </div>
             </div>
         </section>
@@ -136,8 +149,8 @@
                             </span>
                         </h3>
                         <div class="card__details">
-                            <h5 class="heading-5">$120/m<sup>2</sup>
-                            </h5>
+                            <p class="card-price">$120/m<sup>2</sup>
+                            </p>
                             <ul>
                                 <li>Digging service</li>
                                 <li>Planting service</li>
@@ -165,7 +178,7 @@
                             </span>
                         </h3>
                         <div class="card__details">
-                            <h5 class="heading-5">$200/m<sup>2</sup></h5>
+                            <p class="card-price">$200/m<sup>2</sup></p>
                             <ul>
                                 <li>Digging service</li>
                                 <li>Planting service</li>
@@ -193,8 +206,8 @@
                             </span>
                         </h3>
                         <div class="card__details">
-                            <h5 class="heading-5">$350/m<sup>2</sup>
-                            </h5>
+                            <p class="card-price">$350/m<sup>2</sup>
+                            </p>
                             <ul>
                                 <li>Digging service</li>
                                 <li>Planting service</li>
@@ -217,14 +230,15 @@
         <section class="section-testimonials" id="testimonials">
             <div class="u-mb-big pos-rel">
                 <h2 class="heading-2">Our clients</h2>
-                <h3 class="heading-3__back">Clients</h3>
+                <p class="heading-3__back">Clients</p>
             </div>
             <div class="section-testimonials__content">
 
                 <div class="testimonial">
                     <div class="testimonial__text">
                         <figure class="testimonial__info">
-                            <img src="img/client-1.jpg" alt="Mike Store" class="testimonial__info--photo">
+                            <img src="img/client-1.jpg" alt="Mike Store" class="testimonial__info--photo" width="200"
+                                height="200">
                             <div>
                                 <p class="testimonial__info--name"> Mike Store</p>
                                 <p class="testimonial__info--date"> Aug 22th, 2020</p>
@@ -240,7 +254,8 @@
                 <div class="testimonial">
                     <div class="testimonial__text">
                         <figure class="testimonial__info">
-                            <img src="img/client-2.jpg" alt="Mary Smooth" class="testimonial__info--photo">
+                            <img src="img/client-2.jpg" alt="Mary Smooth" class="testimonial__info--photo" width="200"
+                                height="200">
                             <div>
                                 <p class="testimonial__info--name"> Mary Smooth</p>
                                 <p class="testimonial__info--date"> Sept 17th, 2019</p>
@@ -269,69 +284,69 @@
         <section class="section-gallery-cover" id="gallery">
             <div class=" u-mb-big pos-rel">
                 <h2 class="heading-2">Our gallery</h2>
-                <h3 class="heading-3__back">Gallery</h3>
+                <p class="heading-3__back">Gallery</p>
             </div>
             <div class="section-gallery">
                 <figure class="section-gallery__item section-gallery__item--1">
-                    <img srcset="img/img-1-small.jpg 400w,  img/img-1.jpg 1000w"
-                        sizes="(max-width: 37.5em) 30vw, 1000px" src="img/img-1.jpg" alt="Gallery image 1"
-                        class="section-gallery__img">
+                    <img srcset="img/img-1-small.webp 400w,  img/img-1.webp 1000w"
+                        sizes="(max-width: 37.5em) 30vw, 1000px" src="img/img-1-small.jpg" alt="Gallery image 1"
+                        class="section-gallery__img" width="1000" height="1023">
                     <div class="section-gallery__item--hover">
                         <h3 class="heading-3 ">Dream Garden</h3>
                     </div>
                 </figure>
                 <figure class="section-gallery__item section-gallery__item--2">
-                    <img srcset="img/img-2-small.jpg 800w,  img/img-2.jpg 1000w"
-                        sizes="(max-width: 37.5em) 63vw, 1000px" src="img/img-2.jpg" alt="Gallery image 2"
-                        class="section-gallery__img">
+                    <img srcset="img/img-2-small.webp 800w,  img/img-2.webp 1000w"
+                        sizes="(max-width: 37.5em) 63vw, 1000px" src="img/img-2-small.jpg" alt="Gallery image 2"
+                        class="section-gallery__img" width="1000" height="526">
                     <div class="section-gallery__item--hover">
                         <h3 class="heading-3 ">Dream Garden</h3>
                     </div>
                 </figure>
                 <figure class="section-gallery__item section-gallery__item--3">
-                    <img srcset="img/img-3-small.jpg 400w,  img/img-3.jpg 1000w"
-                        sizes="(max-width: 37.5em) 30vw, 1000px" src="img/img-3.jpg" alt="Gallery image 3"
-                        class="section-gallery__img">
+                    <img srcset="img/img-3-small.webp 400w,  img/img-3.webp 1000w"
+                        sizes="(max-width: 37.5em) 30vw, 1000px" src="img/img-3-small.jpg" alt="Gallery image 3"
+                        class="section-gallery__img" width="1000" height="1311">
                     <div class="section-gallery__item--hover">
                         <h3 class="heading-3 ">Dream Garden</h3>
                     </div>
                 </figure>
                 <figure class="section-gallery__item section-gallery__item--4">
-                    <img srcset="img/img-4-small.jpg 800w,  img/img-4.jpg 1000w"
-                        sizes="(max-width: 37.5em) 63vw, 1000px" src="img/img-4.jpg" alt="Gallery image 4"
-                        class="section-gallery__img">
+                    <img srcset="img/img-4-small.webp 800w,  img/img-4.webp 1000w"
+                        sizes="(max-width: 37.5em) 63vw, 1000px" src="img/img-4-small.jpg" alt="Gallery image 4"
+                        class="section-gallery__img" width="1000" height="519">
                     <div class="section-gallery__item--hover">
                         <h3 class="heading-3 ">Dream Garden</h3>
                     </div>
                 </figure>
                 <figure class="section-gallery__item section-gallery__item--5">
-                    <img srcset="img/img-5-small.jpg 400w,  img/img-5.jpg 1000w"
-                        sizes="(max-width: 37.5em) 30vw, 1000px" src="img/img-5.jpg" alt="Gallery image 5"
-                        class="section-gallery__img">
+                    <img srcset="img/img-5-small.webp 400w,  img/img-5.webp 1000w"
+                        sizes="(max-width: 37.5em) 30vw, 1000px" src="img/img-5-small.jpg" alt="Gallery image 5"
+                        class="section-gallery__img" width="1000" height="1175">
                     <div class="section-gallery__item--hover">
                         <h3 class="heading-3 ">Dream Garden</h3>
                     </div>
                 </figure>
                 <figure class="section-gallery__item section-gallery__item--6">
-                    <img srcset="img/img-6-small.jpg 800w,  img/img-6.jpg 1000w"
-                        sizes="(max-width: 37.5em) 63vw, 1000px" src="img/img-6.jpg" alt="Gallery image 6"
-                        class="section-gallery__img">
+                    <img srcset="img/img-6-small.webp 800w,  img/img-6.webp 1000w"
+                        sizes="(max-width: 37.5em) 63vw, 1000px" src="img/img-6-small.jpg" alt="Gallery image 6"
+                        class="section-gallery__img" width="1000" height="1250">
                     <div class="section-gallery__item--hover">
                         <h3 class="heading-3 ">Dream Garden</h3>
                     </div>
                 </figure>
                 <figure class="section-gallery__item section-gallery__item--7">
-                    <img srcset="img/img-7-small.jpg 400w,  img/img-7.jpg 1000w"
-                        sizes="(max-width: 37.5em) 30vw, 1000px" src="img/img-7.jpg" alt="Gallery image 7"
-                        class="section-gallery__img">
+                    <img srcset="img/img-7-small.webp 400w,  img/img-7.webp 1000w"
+                        sizes="(max-width: 37.5em) 30vw, 1000px" src="img/img-7-small.jpg" alt="Gallery image 7"
+                        class="section-gallery__img" width="1000" height="584">
                     <div class="section-gallery__item--hover">
                         <h3 class="heading-3 ">Dream Garden</h3>
                     </div>
                 </figure>
                 <figure class="section-gallery__item section-gallery__item--8">
-                    <img srcset="img/img-8-small.jpg 800w,  img/img-8.jpg 1000w"
-                        sizes="(max-width: 37.5em) 63vw, 1000px" src="img/img-8.jpg" alt="Gallery image 8"
-                        class="section-gallery__img">
+                    <img srcset="img/img-8-small.webp 800w,  img/img-8.webp 1000w"
+                        sizes="(max-width: 37.5em) 63vw, 1000px" src="img/img-8-small.jpg" alt="Gallery image 8"
+                        class="section-gallery__img" width="1000" height="598">
                     <div class="section-gallery__item--hover">
                         <h3 class="heading-3 ">Dream Garden</h3>
                     </div>
@@ -342,7 +357,7 @@
         <section class="section-contact" id="contact">
             <div class="u-mb-bigger pos-rel">
                 <h2 class="heading-2">Contact us</h2>
-                <h3 class="heading-3__back">Contact</h3>
+                <p class="heading-3__back">Contact</p>
             </div>
             <div class="u-center-box">
                 <div class="section-contact__content">
@@ -414,14 +429,13 @@
                 </ul>
             </div>
 
-            <div class="footer__copyright">Made by <img src="img/logo-DM.svg" alt="Diana Martina name" class="logo-DM">
+            <div class="footer__copyright">Made by <img src="img/logo-DM.svg" alt="Diana Martina name" class="logo-DM"
+                    width="101" height="16">
             </div>
         </div>
 
     </footer>
 
-
-    <script src="script.js"></script>
 </body>
 
 </html>

@@ -29,7 +29,7 @@
     &:hover,
     &:active,
     &--active {
-      color: $color-primary-light;
+      color: $color-secondary;
       transform: scale(1.15);
       transform-origin: center center;
     }
@@ -44,6 +44,7 @@
       //Menu functionality
 
       // background visible on hamburger click
+      //the background scales up from a ball that is under the menu hamburger to entire page
       &__checkbox:checked ~ .navigation__background {
         transform: scale(80);
       }
@@ -68,7 +69,7 @@
         cursor: pointer;
       }
 
-      //the background scales up from a ball that is under the menu hamburger to entire page
+      //the background is a small white ball
       &__background {
         height: 5rem;
         width: 5rem;
@@ -77,11 +78,11 @@
         top: 4rem;
         right: 4rem;
         background-image: radial-gradient(
-          $color-primary,
-          $color-primary-medium
+          $color-primary-medium-dark,
+          $color-secondary
         );
 
-        box-shadow: 0 0 8px 8px rgba($color-primary-light, 0.01);
+        box-shadow: 0 0 8px 8px rgba($color-secondary, 0.01);
         z-index: 70;
 
         // transform: scale(80);// only for test

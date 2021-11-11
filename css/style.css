@@ -87,7 +87,7 @@ body {
       .heading-1--main {
         font-size: 3rem; } }
   .heading-1--main-sec {
-    color: #80b918; }
+    color: #5c8118; }
   .heading-1--secondary {
     font-size: 1.7rem;
     font-weight: 300;
@@ -103,7 +103,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   padding-left: 1.6rem;
-  background-image: linear-gradient(to right, #80b918, #004836);
+  background-image: linear-gradient(to right, #5c8118, #004836);
   display: inline-block;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -141,9 +141,10 @@ body {
   color: #f7f7f7;
   display: inline-block; }
   .heading-3__back {
-    font-size: 9rem;
+    font-size: 8rem;
     color: #eeeeee;
     position: absolute;
+    font-weight: 700;
     text-transform: uppercase;
     top: -30px;
     left: 46px;
@@ -261,13 +262,13 @@ body {
 
 .btn--secondary {
   color: #ffffff;
-  background-color: #80b918;
+  background-color: #5c8118;
   border: none; }
   .btn--secondary::after {
-    background-color: #80b918; }
+    background-color: #5c8118; }
 
 .btn--white {
-  color: #2b9368;
+  color: #2a9267;
   background-color: #ffffff; }
   .btn--white::after {
     background-color: #ffffff; }
@@ -285,15 +286,15 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #30a661;
+  color: #065f49;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #30a661;
+  border-bottom: 1px solid #065f49;
   padding: 1rem;
   transition: all 0.2s; }
 
 .btn-text:hover {
-  background-color: #30a661;
+  background-color: #5c8118;
   color: #ffffff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transform: translateY(-2px); }
@@ -347,9 +348,9 @@ body {
           padding: 5rem 0 3rem;
           clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%); } }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #2b9368, #03241b); }
+        background-image: linear-gradient(to right bottom, #2a9267, #03241b); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #80b918, #03241b); }
+        background-image: linear-gradient(to right bottom, #5c8118, #03241b); }
     .card__side--scale {
       height: 55rem;
       width: 26rem;
@@ -378,17 +379,17 @@ body {
       .card__picture {
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); } }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #80b918, #03241b), url(../img/img-7-small.jpg);
+      background-image: linear-gradient(to right bottom, #5c8118, #03241b), url(../img/img-7-small.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat; }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #80b918, #03241b), url(../img/img-4-small.jpg);
+      background-image: linear-gradient(to right bottom, #5c8118, #03241b), url(../img/img-4-small.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat; }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #80b918, #03241b), url(../img/img-2-small.jpg);
+      background-image: linear-gradient(to right bottom, #5c8118, #03241b), url(../img/img-2-small.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat; }
@@ -406,9 +407,9 @@ body {
   .card__heading-span {
     padding: 0 5px; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(128, 185, 24, 0.85), rgba(3, 36, 27, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(92, 129, 24, 0.85), rgba(3, 36, 27, 0.85)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(128, 185, 24, 0.85), rgba(3, 36, 27, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(92, 129, 24, 0.85), rgba(3, 36, 27, 0.85)); }
   .card__details {
     text-align: center;
     margin: 0 auto;
@@ -421,6 +422,13 @@ body {
         padding: 0.8rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px dotted #eeeeee; }
+  .card-price {
+    font-size: 3rem;
+    color: #03241b;
+    font-weight: 700; }
+    @media only screen and (max-width: 48em) {
+      .card-price {
+        font-size: 2rem; } }
 
 .composition {
   position: relative;
@@ -437,6 +445,7 @@ body {
   .composition__photo {
     display: inline-block;
     width: 85%;
+    height: auto;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     position: absolute;
     z-index: 10;
@@ -481,7 +490,7 @@ body {
       width: 70%; } }
   .feature-box__icon {
     font-size: 5rem;
-    background-image: linear-gradient(to right, #80b918, #03241b);
+    background-image: linear-gradient(to right, #5c8118, #03241b);
     display: inline-block;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -518,9 +527,9 @@ body {
   .form__input:focus, .form__mess:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border: 2px solid #80b918; }
+    border: 2px solid #5c8118; }
   .form__input:focus:invalid, .form__mess:focus:invalid {
-    border: 2px solid #80b918; }
+    border: 2px solid #5c8118; }
   .form__input::-webkit-input-placeholder, .form__mess::-webkit-input-placeholder {
     color: #777; }
 
@@ -556,7 +565,7 @@ body {
   transition: all 0.3s; }
 
 .navigation__link:hover, .navigation__link:active, .navigation__link--active {
-  color: #80b918;
+  color: #5c8118;
   transform: scale(1.15);
   transform-origin: center center; }
 
@@ -586,8 +595,8 @@ body {
     position: fixed;
     top: 4rem;
     right: 4rem;
-    background-image: radial-gradient(#2b9368, #30a661);
-    box-shadow: 0 0 8px 8px rgba(128, 185, 24, 0.01);
+    background-image: radial-gradient(#004836, #5c8118);
+    box-shadow: 0 0 8px 8px rgba(92, 129, 24, 0.01);
     z-index: 70;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.071, 1); }
   .header__navigation .navigation__nav {
@@ -667,7 +676,7 @@ body {
     .testimonial__info--name {
       font-size: 1.6rem;
       font-weight: 700;
-      color: #80b918; }
+      color: #5c8118; }
     .testimonial__info--date {
       font-size: 1.2rem; }
   .testimonial__text {
@@ -696,7 +705,7 @@ body {
     content: "";
     width: 3rem;
     height: 5rem;
-    background-color: #80b918;
+    background-color: #5c8118;
     position: absolute;
     top: 0;
     left: 0;
@@ -742,7 +751,8 @@ body {
   height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.01)), url("../img/hero-small.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  position: relative; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em) {
     .header {
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.01)), url("../img/hero.jpg"); } }
@@ -783,7 +793,7 @@ body {
     display: inline-block;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to right bottom, rgba(3, 36, 27, 0.9), rgba(128, 185, 24, 0.3));
+    background-image: linear-gradient(to right bottom, rgba(3, 36, 27, 0.9), rgba(92, 129, 24, 0.3));
     clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
     position: absolute;
     z-index: 2;
@@ -904,7 +914,7 @@ body {
       opacity: 0;
       transform: translateY(102%);
       text-align: center;
-      background-image: linear-gradient(100deg, rgba(48, 166, 97, 0.7), rgba(43, 147, 104, 0.7));
+      background-image: linear-gradient(100deg, rgba(48, 166, 97, 0.7), rgba(42, 146, 103, 0.7));
       transition: opacity 0.7s, transform 0.5s ease-out;
       display: flex;
       justify-content: center;
@@ -986,8 +996,9 @@ body {
   .section-contact__content {
     width: 80%;
     height: 50rem;
-    background-image: linear-gradient(100deg, #2b9368 0%, rgba(3, 36, 27, 0.8) 40%, rgba(255, 255, 255, 0.1) 40%), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='200' height='100'%3E%3Cpath fill='%23bfbfbf' fill-opacity='0.1' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+    background-image: linear-gradient(100deg, #2a9267 0%, rgba(3, 36, 27, 0.8) 40%, rgba(255, 255, 255, 0.1) 40%), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='200' height='100'%3E%3Cpath fill='%23bfbfbf' fill-opacity='0.1' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
     background-size: 100%;
+    background-repeat: no-repeat;
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: space-between;
@@ -998,7 +1009,7 @@ body {
         width: 80%;
         height: 100%;
         background-image: none;
-        background-image: linear-gradient(100deg, #2b9368, rgba(3, 36, 27, 0.8));
+        background-image: linear-gradient(100deg, #2a9267, rgba(3, 36, 27, 0.8));
         padding: 4rem; } }
     @media only screen and (max-width: 30em) {
       .section-contact__content {
@@ -1019,7 +1030,7 @@ body {
   .contact__adress--email {
     cursor: pointer; }
     .contact__adress--email:hover {
-      color: #80b918;
+      color: #5c8118;
       text-decoration: underline; }
 
 .contact__form {
